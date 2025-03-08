@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>h1{color: blue;
+    font-family: Arial, sans-serif;}
+        *{background-color: lightblue;}
+        #name{background-color: lightgoldenrodyellow;}
+    </style>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Multimedia, Tables  and Forms</title>
+    <limk rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">Web Tutorial</a>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Multimedia</a></li>
+                <li><a href="#">Tables</a></li>
+                <li><a href="#">Forms</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <hi>HTML Multimedia, Tables  and Forms</hi>
+    <!--Adding audio files to a document-->
+    <h2>Embedded Audio</h2>
+    <audio controls>
+        <source src="Fido-Joy-Is-Coming.mp3" type="audio/mpeg">
+         Your browser does not support the audio element.
+    </audio>
+    <h2>Embedded Video</h2>
+    <video width ="500" controls poster="Screenshot 2024-12-12 202348.png">
+        <source src="All American-S4E18-480P.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <h2>HTML Tables</h2>
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Nationality</th>
+            <th>Gender</th>
+            <th>Phone number</th>
+        </tr>
+        <tr>
+            <th>Jeremy</th>
+            <th>19</th>
+            <th>kenyan</th>
+            <th>Male</th>
+            <th>0793947439</th>
+        </tr>
+        <tr>
+            <td colspan="5">Merged Column</td>
+        </tr>
+        <tr>
+            <td rowspan=5>Merged Rows</td>
+            <td>Data 1</td>
+        </tr>
+        <tr>
+            <td>Data 2</td>
+        </tr>
+    </table>
+    <!-- Creating Forms -->
+     <h2>HTML Forms</h2>
+     
+     <form actions="/submit" method="POST">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name"><br>
+        <label for="gender">Gender</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br>
+        <label for="password">Password</label>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email"><br>
+        <label for="interest">Interest </label>
+        <input type="checkbox" id="sports" name="interest" value="sports">
+        <label for="sports">Sports</label>
+        <input type="checkbox" id="sports" name="interest" value="sports">
+        <label for="music">Music</label>
+        <input type="checkbox" id="sports" name="interest" value="sports">
+        <label for="reading">Reading</label>
+        <label for="message">Message</label>
+        <textarea name="message" id="message" placeholder="Enter your message"></textarea><br>
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password">
+        <label for="country">Country</label>
+        <select name="country" id="country">
+            <option value=" " disabled selected>Select your country</option>
+            <option value="kenya">Kenya</option>
+            <option value="uganda">uganda</option>
+            <option value="tanzania">Tanzania</option>
+            <option value="rwanda">Rwanda</option>
+            <option value="burundi">Burundi</option>
+    </seleect><br>
+    <button type="submit"value="submit">Submit</button>
+    </form>
+</body>
+</html>
